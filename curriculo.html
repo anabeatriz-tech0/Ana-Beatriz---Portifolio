@@ -2,33 +2,48 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículo | Ana Beatriz</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><script src="auth.js"></script>
-</head><body><header><div class="logo">AB.</div><nav>
-            <a href="index.html">INÍCIO</a>
-            <a href="sobre.html">SOBRE MIM</a>
-            <a href="objetivos.html">OBJETIVOS</a>
-            <a href="projetos.html">PROJETOS</a>
-            <a href="areas.html">ÁREAS</a>
-            <a href="curriculo.html" class="ativo">CURRÍCULO</a>
-            <a href="anexos.html">ANEXOS</a>
-            <a href="referencias.html">REFERÊNCIAS</a>
-            <a href="contato.html">CONTATO</a>
-            <a href="#" onclick="sair(); return false;">SAIR</a>
-        </nav></header>
-<main class="nova-pagina">
-<div class="nova-cabecalho"><span class="sobretitulo">TRAJETÓRIA ACADÊMICA</span><h1>Meu Currículo</h1><p>Minha formação, meus conhecimentos e as experiências construídas ao longo da minha trajetória escolar.</p></div>
-<div class="curriculo-acoes" style="text-align:center;margin-bottom:25px"><button class="nova-botao" onclick="window.print()"><i class="fa-solid fa-file-pdf"></i> Salvar currículo em PDF</button></div>
-<article class="curriculo-folha"><div class="curriculo-identificacao"><h2>Ana Beatriz de Brito Alves</h2><p>Estudante | Informática para a Internet</p><p>[Adicione seu e-mail] · Picos – PI</p></div>
-<section class="curriculo-secao"><h3>Objetivo</h3><p>Dar continuidade à minha formação acadêmica, ampliar meus conhecimentos e desenvolver habilidades que contribuam para meu crescimento pessoal e profissional.</p></section>
-<section class="curriculo-secao"><h3>Formação acadêmica</h3><p><strong>SESI</strong><br>Ensino médio — 3ª série, em fase de conclusão.</p><p style="margin-top:12px"><strong>SENAI</strong><br>Curso de Informática para a Internet.</p></section>
-<section class="curriculo-secao"><h3>Conhecimentos</h3><ul><li>Fundamentos de HTML e CSS.</li><li>Fundamentos de JavaScript.</li><li>Noções de banco de dados e MySQL.</li><li>Desenvolvimento de projetos escolares.</li></ul></section>
-<section class="curriculo-secao"><h3>Projetos e experiências acadêmicas</h3><p>Participação em atividades e projetos desenvolvidos durante a formação escolar, aplicando conhecimentos adquiridos em sala de aula. Os trabalhos apresentados neste portfólio complementam o registro da minha trajetória acadêmica.</p></section>
-<section class="curriculo-secao"><h3>Habilidades</h3><ul><li>Organização e responsabilidade com as atividades.</li><li>Disposição para aprender e desenvolver novos conhecimentos.</li><li>Participação em atividades e trabalhos escolares.</li></ul></section>
-<section class="curriculo-secao"><h3>Interesses</h3><p>Continuar os estudos, ampliar minha formação e explorar oportunidades de aprendizado e desenvolvimento pessoal.</p></section></article>
-<p class="nota-pagina" style="text-align:center;color:#71676a;font-size:13px;margin-top:20px">Confira seus dados e substitua o e-mail antes de salvar como PDF.</p></main>
-    <footer>
-        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
-        <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
-    </footer>
-
+<meta name="description" content="Currículo escolar de Ana Beatriz de Brito Alves.">
+<title>Currículo | Ana Beatriz</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="auth.js"></script>
+</head>
+<body>
+<header><div class="logo">AB.</div><nav aria-label="Navegação principal">
+<a href="index.html">INÍCIO</a><a href="sobre.html">SOBRE MIM</a>
+<a href="objetivos.html">OBJETIVOS</a><a href="projetos.html">PROJETOS</a>
+<a href="areas.html">ÁREAS</a><a href="curriculo.html" class="ativo">CURRÍCULO</a>
+<a href="anexos.html">ANEXOS</a><a href="referencias.html">REFERÊNCIAS</a>
+<a href="contato.html">CONTATO</a><a href="#" onclick="sair(); return false;">SAIR</a>
+</nav></header>
+<main class="curriculo-pagina">
+<div class="titulo-pagina curriculo-titulo"><span>TRAJETÓRIA ACADÊMICA</span>
+<h1>Meu Currículo</h1><div class="linha-titulo"></div>
+<p>Formação, conhecimentos e experiências construídas ao longo da minha trajetória escolar.</p></div>
+<div class="curriculo-acoes"><button class="curriculo-imprimir" type="button" onclick="window.print()">
+<i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Imprimir / Salvar em PDF</button></div>
+<article class="curriculo-documento">
+<div class="curriculo-cabecalho"><div><span class="curriculo-identificador">CURRÍCULO</span>
+<h2>Ana Beatriz de Brito Alves</h2><p class="curriculo-resumo">Estudante • Informática para a Internet</p></div>
+<div class="curriculo-contatos">
+<p><i class="fa-solid fa-envelope"></i> ana.b.alves11@aluno.senai.br</p>
+<p><i class="fa-solid fa-phone"></i> (89) 99465-9668</p>
+<p><i class="fa-solid fa-location-dot"></i> Picos – PI</p></div></div>
+<section class="curriculo-bloco"><h3><i class="fa-regular fa-compass"></i> Objetivo</h3>
+<p>Dar continuidade à minha formação acadêmica, ampliar meus conhecimentos e desenvolver habilidades que contribuam para meu crescimento pessoal e profissional.</p></section>
+<section class="curriculo-bloco"><h3><i class="fa-solid fa-graduation-cap"></i> Formação acadêmica</h3>
+<div class="curriculo-registro"><strong>SESI</strong><p>Ensino médio — 3ª série, em fase de conclusão.</p></div></section>
+<section class="curriculo-bloco"><h3><i class="fa-solid fa-book-open"></i> Cursos</h3>
+<div class="curriculo-registro"><strong>SENAI</strong><p>Curso de Informática para a Internet.</p></div></section>
+<section class="curriculo-bloco"><h3><i class="fa-solid fa-laptop-code"></i> Conhecimentos e habilidades</h3>
+<ul class="curriculo-lista"><li>Fundamentos de HTML e CSS.</li><li>Fundamentos de JavaScript.</li>
+<li>Noções de banco de dados e MySQL.</li><li>Desenvolvimento de projetos escolares.</li>
+<li>Organização, responsabilidade e disposição para aprender.</li></ul></section>
+<section class="curriculo-bloco"><h3><i class="fa-solid fa-folder-open"></i> Projetos e experiências acadêmicas</h3>
+<p>Participação em atividades, trabalhos e projetos desenvolvidos durante a formação escolar, aplicando conhecimentos adquiridos em sala de aula. Os registros dessas experiências estão apresentados nas páginas de Projetos, Áreas e Anexos deste portfólio.</p></section>
+</article>
+<p class="curriculo-nota">Na janela de impressão, escolha “Salvar como PDF” para gerar seu arquivo.</p>
+</main>
+<footer><p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+<p>© 2026 Ana Beatriz. Todos os direitos reservados.</p></footer>
 </body></html>
