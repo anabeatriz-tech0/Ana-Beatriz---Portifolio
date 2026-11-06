@@ -1,111 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Referências | Ana Beatriz</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <script src="auth.js"></script>
-    <style>
-        .referencias-pagina { max-width: 950px; margin: 48px auto 65px; padding: 0 24px 30px; }
-        .referencias-topo { text-align:center; margin-bottom:38px; }
-        .referencias-lista { display:grid; gap:15px; }
-        .referencia-item { display:flex; align-items:center; justify-content:space-between; gap:22px; background:#fff; border:1px solid var(--borda); border-radius:12px; padding:21px 23px; box-shadow:var(--sombra-suave); transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-        .referencia-item:hover { transform:translateY(-3px); border-color:#d7bdc2; box-shadow:var(--sombra-hover); }
-        .referencia-item h2 { font:normal 20px Georgia,serif; color:var(--vinho); margin:0 0 5px; }
-        .referencia-item a { color:#6f2638; overflow-wrap:anywhere; }
-        .referencia-item .url-fonte { font-size:14px; text-decoration:none; }
-        .referencia-item .url-fonte:hover { text-decoration:underline; }
-        .referencia-item .abrir-fonte { flex-shrink:0; display:inline-flex; align-items:center; gap:8px; padding:11px 16px; border-radius:7px; background:var(--vinho); color:#fff; text-decoration:none; font-size:13px; font-weight:600; transition:background .2s, transform .2s; }
-        .referencia-item .abrir-fonte:hover { background:var(--vinho-escuro); transform:translateY(-2px); }
-        .referencia-vazia { text-align:center; color:var(--texto-suave); padding:25px; border:1px dashed #c9aeb3; border-radius:10px; }
-        @media(max-width:600px) { .referencias-pagina { margin-top:35px; padding:0 17px 35px; } .referencia-item {align-items:flex-start; flex-direction:column; gap:13px;} .referencia-item .abrir-fonte {align-self:flex-start;} }
-    </style>
 </head>
+
 <body>
+
     <header>
-        <div class="logo">AB.</div>
-        <nav aria-label="Navegação principal">
-            <a href="index.html">INÍCIO</a><a href="sobre.html">SOBRE MIM</a>
-            <a href="objetivos.html">OBJETIVOS</a><a href="projetos.html">PROJETOS</a>
-            <a href="areas.html">ÁREAS</a><a href="curriculo.html">CURRÍCULO</a>
-            <a href="anexos.html">ANEXOS</a><a href="referencias.html" class="ativo">REFERÊNCIAS</a>
-            <a href="contato.html">CONTATO</a><a href="#" onclick="sair(); return false;">SAIR</a>
+        <a href="index.html" class="logo">AB.</a>
+
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="sobre.html">SOBRE MIM</a>
+            <a href="objetivos.html">OBJETIVOS</a>
+            <a href="projetos.html">PROJETOS</a>
+            <a href="areas.html">ÁREAS</a>
+            <a href="curriculo.html">CURRÍCULO</a>
+            <a href="anexos.html">ANEXOS</a>
+            <a href="referencias.html" class="ativo">REFERÊNCIAS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="#" onclick="sair()">SAIR</a>
         </nav>
     </header>
-    <main class="referencias-pagina">
-        <div class="titulo-pagina referencias-topo">
+
+    <main class="referencias">
+
+        <section class="titulo-pagina">
             <span>FONTES DE PESQUISA</span>
+
             <h1>Referências</h1>
+
             <div class="linha-titulo"></div>
-            <p>Fontes consultadas durante as pesquisas e atividades desenvolvidas ao longo do ano.</p>
-        </div>
-        <section class="referencias-lista" aria-label="Lista de referências">
-            
 
-              <article class="referencia-item">
-                <div>
-                    <h2>Canva</h2>
-                    <a class="url-fonte" href="\1" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <a class="abrir-fonte" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-
-
-              <article class="referencia-item">
-                <div>
-                    <h2>ChatGPT</h2>
-                    <a class="url-fonte" href="\1" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <a class="abrir-fonte" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-
-
-             <article class="referencia-item">
-                <div>
-                    <h2>Pinterest</h2>
-                    <a class="url-fonte" href="\1" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <a class="abrir-fonte" href="https://br.pinterest.com/" target="_blank" rel="noopener noreferrer">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-
-
-            <article class="referencia-item">
-                <div>
-                    <h2>Descomplica</h2>
-                    <a class="url-fonte" href="\1" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <a class="abrir-fonte" href="https://descomplica.com.br/" target="_blank" rel="noopener noreferrer">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-
-
-               <article class="referencia-item">
-                <div>
-                    <h2>Gemini</h2>
-                    <a class="url-fonte" href="\1" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <a class="abrir-fonte" href="https://gemini.google.com/app?hl=pt-BR" target="_blank" rel="noopener noreferrer">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-
-
-            <article class="referencia-item">
-                <div>
-                    <h2>Toda matéria</h2>
-                    <a class="url-fonte" href="\1" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <a class="abrir-fonte" href="https://www.todamateria.com.br/" target="_blank" rel="noopener noreferrer">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-
-
-
+            <p>
+                Fontes e materiais utilizados como apoio na construção
+                das atividades e dos conteúdos apresentados neste portfólio.
+            </p>
         </section>
+
+        <section class="lista-referencias" id="listaReferencias">
+            <!-- As referências serão carregadas pelo JavaScript -->
+        </section>
+
     </main>
 
     <footer>
-        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <p class="tutores">
+            Orientadores: <strong>Cleiton Jericó</strong> •
+            <strong>Regiane Leal</strong>
+        </p>
+
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="mailto:ana.b.alves11@aluno.senai.br">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="tel:+5589994659668">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+
         <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
