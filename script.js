@@ -33,3 +33,24 @@ document.addEventListener("DOMContentLoaded",()=>{
   itens.forEach(el=>{el.classList.add("entrada-suave");obs.observe(el);});
  }
 });
+
+
+// =====================================
+// IMPRESSÃO DO CURRÍCULO
+// =====================================
+
+// Seleciona o botão de impressão
+const botaoImprimir = document.getElementById("imprimirCurriculo");
+
+// Verifica se o botão existe
+if (botaoImprimir) {
+
+    // Adiciona o evento de clique
+    botaoImprimir.addEventListener("click", function () {
+
+        // Abre a janela de impressão
+        window.print();
+
+    });
+
+}

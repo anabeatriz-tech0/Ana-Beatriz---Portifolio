@@ -2116,311 +2116,334 @@ footer {
 
 }
 
-/* PADRONIZACAO GERAL — identidade original vinho, branco e neutros */
-:root{--vinho:#720019;--vinho-escuro:#500011;--vinho-claro:#9a3347;--branco:#fff;--cinza-claro:#faf7f5;--borda:#eadfe0;--texto:#292426;--texto-suave:#6d6466;--sombra-suave:0 8px 24px rgba(80,0,17,.07);--sombra-hover:0 14px 30px rgba(80,0,17,.12)}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{min-width:320px;overflow-x:hidden;color:var(--texto);line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%}
-a:focus-visible,button:focus-visible{outline:3px solid rgba(154,51,71,.45);outline-offset:4px}
-header{height:auto;min-height:76px;gap:20px;padding:12px clamp(16px,4vw,7%);box-shadow:0 3px 14px rgba(40,0,10,.035)}
-header .logo{flex:0 0 auto}
-header nav{flex:1 1 auto;justify-content:flex-end;flex-wrap:wrap;gap:5px clamp(9px,1.3vw,20px)}
-header nav a{display:inline-flex;align-items:center;min-height:38px;padding:8px 0 6px;font-size:clamp(10px,.82vw,12px);white-space:nowrap}
-footer{width:100%;margin-top:45px;padding:26px 20px;text-align:center;background:var(--vinho);color:#fff;font-size:13px;line-height:1.8}
-footer p+p{margin-top:5px}
-.card,.eixo,.objetivo-card,.projeto,.contato-card,.referencia-item,.anexo-card{box-shadow:var(--sombra-suave);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
-.card:hover,.eixo:hover,.objetivo-card:hover,.projeto:hover,.contato-card:hover,.referencia-item:hover,.anexo-card:hover{box-shadow:var(--sombra-hover)}
-.btn-principal,.btn-secundario,.btn-cv,.nova-botao,.abrir-fonte{transition:transform .22s ease,background-color .22s ease,box-shadow .22s ease}
-.btn-principal:hover,.btn-secundario:hover,.btn-cv:hover,.nova-botao:hover,.abrir-fonte:hover{transform:translateY(-2px)}
-.titulo-pagina{text-align:center}
-.titulo-pagina h1{font-size:clamp(34px,4.5vw,46px);line-height:1.15;text-wrap:balance}
-.inicio{width:min(100% - 40px,1150px);grid-template-columns:minmax(0,1fr) minmax(280px,430px);gap:clamp(28px,5vw,70px)}
-.texto-inicio h1{font-size:clamp(46px,6.5vw,78px);overflow-wrap:anywhere}
-.foto-inicio img{max-width:100%}
-.cards{width:min(100% - 40px,1150px);grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.cards .card,.objetivo-card,.projeto,.contato-card,.referencia-item{border-radius:10px;min-width:0}
-.sobre,.objetivos,.projetos,.contato,.areas{width:min(100% - 40px,1200px);margin-left:auto;margin-right:auto}
-.projeto h2{overflow-wrap:anywhere}
-.imagem-atividade img,.galeria-estatica img,.anexo-card img{display:block;max-width:100%;cursor:zoom-in}
-.galeria-estatica{width:min(100%,1100px);margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.anexo-card{margin:0;overflow:hidden;border:1px solid var(--borda);border-radius:10px;background:#fff}
-.anexo-card img{width:100%;height:230px;object-fit:cover;transition:transform .35s ease}
-.anexo-card:hover img{transform:scale(1.035)}
-.anexo-card figcaption{padding:13px 15px;color:var(--texto-suave);font-size:13px}
-.modal-imagem{padding:24px;backdrop-filter:blur(4px)}
-.modal-imagem img{max-width:min(92vw,1100px);max-height:86vh;border:4px solid #fff;border-radius:6px}
-.referencias-pagina,.nova-pagina{width:min(100% - 40px,1000px);margin:55px auto 70px}
-.referencias-topo{text-align:center;margin-bottom:38px}
-.referencias-lista{display:grid;gap:15px}
-.referencia-item{background:#fff;min-width:0}
-/* Curriculo */
-.curriculo-pagina{width:min(100% - 36px,980px);margin:48px auto 65px}
-.curriculo-titulo{margin-bottom:26px}
-.curriculo-acoes{display:flex;justify-content:center;margin:0 0 24px}
-.curriculo-imprimir{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 22px;border:1px solid var(--vinho);border-radius:7px;background:var(--vinho);color:#fff;font-size:14px;cursor:pointer;transition:.22s}
-.curriculo-imprimir:hover{background:var(--vinho-escuro);transform:translateY(-2px);box-shadow:0 8px 20px rgba(114,0,25,.16)}
-.curriculo-documento{padding:clamp(24px,5vw,52px);border:1px solid var(--borda);border-top:5px solid var(--vinho);border-radius:10px;background:#fff;box-shadow:var(--sombra-suave)}
-.curriculo-cabecalho{display:flex;align-items:flex-start;justify-content:space-between;gap:25px;padding-bottom:24px;border-bottom:1px solid var(--borda)}
-.curriculo-identificador{color:var(--vinho);font-size:10px;font-weight:700;letter-spacing:2.5px}
-.curriculo-cabecalho h2{margin:8px 0;color:var(--vinho);font:normal clamp(25px,4vw,34px)/1.2 Georgia,serif}
-.curriculo-resumo{color:var(--texto-suave);font-size:14px}
-.curriculo-contatos{min-width:220px;color:var(--texto-suave);font-size:12px}
-.curriculo-contatos p{margin:5px 0;overflow-wrap:anywhere}
-.curriculo-contatos i{width:18px;color:var(--vinho)}
-.curriculo-bloco{margin-top:25px;break-inside:avoid}
-.curriculo-bloco h3{display:flex;align-items:center;gap:10px;margin-bottom:11px;padding-bottom:8px;border-bottom:1px solid var(--borda);color:var(--vinho);font:normal 19px Georgia,serif}
-.curriculo-bloco h3 i{font-size:14px}
-.curriculo-bloco p,.curriculo-bloco li{color:#494144;font-size:13px;line-height:1.75}
-.curriculo-registro strong{color:var(--texto);font-size:14px}
-.curriculo-lista{padding-left:20px;columns:2;column-gap:35px}
-.curriculo-lista li{break-inside:avoid;padding-left:2px}
-.curriculo-nota{margin-top:15px;text-align:center;color:var(--texto-suave);font-size:12px}
-/* Responsividade */
-@media(max-width:1050px){
- header{align-items:flex-start;flex-direction:column;gap:5px;padding-top:10px;padding-bottom:8px}
- header nav{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;padding:2px 0 5px;scrollbar-width:thin}
- header nav a{flex:0 0 auto;padding:7px 0 5px}
- .eixos{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:760px){
- .inicio{grid-template-columns:1fr;text-align:center;padding-top:38px}
- .texto-inicio{padding-left:0}
- .texto-inicio p{margin-left:auto;margin-right:auto}
- .texto-inicio .linha{margin-left:auto;margin-right:auto}
- .botoes,.redes{justify-content:center}
- .foto-inicio{height:auto;min-height:300px}
- .foto-inicio img{width:min(78vw,350px);height:min(92vw,410px)}
- .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
- .galeria-estatica{grid-template-columns:repeat(2,minmax(0,1fr))}
- .curriculo-cabecalho{flex-direction:column}
- .curriculo-contatos{min-width:0}
-}
-@media(max-width:520px){
- .sobre,.objetivos,.projetos,.contato,.areas{width:min(100% - 28px,1200px)}
- .cards,.eixos,.galeria-estatica{grid-template-columns:1fr}
- .cards{width:min(100% - 28px,1150px)}
- .anexo-card img{height:220px}
- .botoes{flex-wrap:wrap}
- .curriculo-pagina,.referencias-pagina,.nova-pagina{width:min(100% - 28px,1000px);margin-top:35px}
- .curriculo-documento{padding:22px 18px}
- .curriculo-lista{columns:1}
- .referencia-item{align-items:flex-start;flex-direction:column}
- footer{padding:22px 15px}
-}
-@media(prefers-reduced-motion:reduce){
- html{scroll-behavior:auto}
- *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-}
-/* Impressao do curriculo: folha A4, sem elementos do site */
-@media print{
- @page{size:A4;margin:14mm 15mm}
- html,body{width:100%;min-width:0;background:#fff!important;color:#222!important;font-family:Arial,sans-serif!important;font-size:10pt;print-color-adjust:exact;-webkit-print-color-adjust:exact}
- header,footer,.curriculo-titulo,.curriculo-acoes,.curriculo-nota,.modal-imagem{display:none!important}
- .curriculo-pagina{width:100%;max-width:none;margin:0;padding:0}
- .curriculo-documento{padding:0;border:0;border-top:3px solid #720019;border-radius:0;box-shadow:none!important}
- .curriculo-cabecalho{gap:10mm;padding-bottom:6mm}
- .curriculo-cabecalho h2{font-size:21pt}
- .curriculo-resumo,.curriculo-contatos,.curriculo-bloco p,.curriculo-bloco li{font-size:9.5pt}
- .curriculo-bloco{margin-top:5mm;break-inside:avoid;page-break-inside:avoid}
- .curriculo-bloco h3{margin-bottom:2mm;padding-bottom:1.5mm;font-size:12pt}
- .curriculo-lista{columns:2}
- a{color:inherit!important;text-decoration:none!important}
-}
-
-.entrada-suave{opacity:0;transform:translateY(12px)}
-.entrada-suave.visivel{opacity:1;transform:translateY(0);transition:opacity .45s ease,transform .45s ease}
-@media(prefers-reduced-motion:reduce){.entrada-suave{opacity:1;transform:none}}
 
 
 
-/* =========================================
-   PADRONIZAÇÃO — ANEXOS E REFERÊNCIAS
-   Mesmo título usado na página Meu Currículo
-========================================= */
-.anexos-topo,
-.referencias-topo {
-    text-align: center;
-    margin-bottom: 38px;
+
+
+/* =====================================
+   PÁGINA CURRÍCULO
+===================================== */
+
+.curriculo-pagina {
+    width: min(100% - 40px, 1050px);
+    margin: 65px auto 75px;
 }
-.anexos-topo span,
-.referencias-topo span {
-    color: var(--vinho);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
+
+/* TÍTULO */
+
+.curriculo-titulo {
+    margin-bottom: 35px;
 }
-.anexos-topo h1,
-.referencias-topo h1 {
-    margin-top: 12px;
-    color: var(--vinho);
-    font-family: Georgia, serif;
-    font-size: 48px;
-    font-weight: normal;
-    line-height: 1.15;
-}
-.anexos-topo .linha-titulo,
-.referencias-topo .linha-titulo {
-    width: 45px;
-    height: 3px;
-    margin: 18px auto 0;
-    background: var(--vinho);
-}
-.anexos-topo p,
-.referencias-topo p {
-    max-width: 680px;
-    margin: 18px auto 0;
-    color: var(--texto-suave);
+
+.curriculo-titulo p {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: #666;
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.8;
 }
-.anexos-pagina {
-    width: min(100% - 36px, 1100px);
-    margin: 48px auto 65px;
-    padding: 0 0 30px;
+
+
+/* BOTÃO DE IMPRESSÃO */
+
+.curriculo-acoes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
-.galeria-estatica {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-}
-.anexo-card {
-    min-width: 0;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    border: 1px solid var(--borda);
-    border-radius: 13px;
-    background: #fff;
-    box-shadow: var(--sombra-suave);
-    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-}
-.anexo-card:hover {
-    transform: translateY(-5px);
-    border-color: #d7bdc2;
-    box-shadow: var(--sombra-hover);
-}
-.anexo-imagem {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    background: var(--cinza-claro);
-}
-.anexo-imagem img {
-    display: block;
-    width: 100%;
-    height: 245px;
-    object-fit: cover;
-    cursor: zoom-in;
-    transition: transform .35s ease;
-}
-.anexo-card:hover .anexo-imagem img { transform: scale(1.035); }
-.anexo-imagem::after {
-    content: "\f00e";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: var(--vinho);
-    color: #fff;
-    font-size: 13px;
-    box-shadow: 0 3px 10px rgba(40,0,10,.18);
-    pointer-events: none;
-}
-.anexo-card figcaption {
+
+.curriculo-imprimir {
     display: flex;
     align-items: center;
-    min-height: 43px;
-    padding: 11px 7px 3px;
-    color: var(--texto);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.45;
-}
-.anexo-card figcaption::before {
-    content: "";
-    width: 3px;
-    height: 23px;
-    flex: 0 0 3px;
-    margin-right: 11px;
-    border-radius: 3px;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 25px;
+
     background: var(--vinho);
+    color: var(--branco);
+
+    border: 1px solid var(--vinho);
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
 }
-.referencias-pagina {
-    width: min(100% - 36px, 950px);
-    margin: 48px auto 65px;
-    padding: 0 0 30px;
+
+.curriculo-imprimir:hover {
+    background: var(--vinho-escuro);
+    border-color: var(--vinho-escuro);
+    transform: translateY(-2px);
 }
-.referencias-lista { display: grid; gap: 15px; }
-.referencia-item {
+
+
+/* DOCUMENTO */
+
+.curriculo-documento {
+    max-width: 900px;
+    margin: auto;
+    padding: 45px 50px;
+
+    background: var(--branco);
+
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 28px rgba(80, 0, 17, 0.06);
+}
+
+
+/* CABEÇALHO DO CURRÍCULO */
+
+.curriculo-cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 22px;
-    min-width: 0;
-    padding: 21px 23px;
-    border: 1px solid var(--borda);
-    border-radius: 12px;
-    background: #fff;
-    box-shadow: var(--sombra-suave);
-    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    gap: 30px;
+
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--vinho);
 }
-.referencia-item:hover {
-    transform: translateY(-3px);
-    border-color: #d7bdc2;
-    box-shadow: var(--sombra-hover);
-}
-.referencia-item h2 {
-    margin: 0 0 5px;
+
+.curriculo-identificador {
     color: var(--vinho);
-    font: normal 20px Georgia, serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
-.referencia-item .url-fonte {
-    color: #6f2638;
+
+.curriculo-identificacao h2 {
+    margin: 12px 0 8px;
+
+    color: var(--vinho);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.curriculo-resumo {
+    color: #71676a;
     font-size: 14px;
-    overflow-wrap: anywhere;
 }
-.referencia-item .abrir-fonte {
-    display: inline-flex;
-    flex-shrink: 0;
+
+
+/* CONTATOS */
+
+.curriculo-contatos {
+    min-width: 235px;
+}
+
+.curriculo-contatos p {
+    display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 11px 16px;
-    border-radius: 7px;
-    background: var(--vinho);
-    color: #fff;
+    gap: 10px;
+
+    margin: 9px 0;
+
+    color: #555;
+    font-size: 12px;
+}
+
+.curriculo-contatos i {
+    width: 15px;
+    color: var(--vinho);
+    text-align: center;
+}
+
+
+/* SEÇÕES */
+
+.curriculo-bloco {
+    margin-top: 30px;
+}
+
+.curriculo-bloco h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 13px;
+    padding-bottom: 10px;
+
+    color: var(--vinho);
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
+
+    border-bottom: 1px solid var(--borda);
+}
+
+.curriculo-bloco h3 i {
+    font-size: 15px;
+}
+
+.curriculo-bloco p,
+.curriculo-bloco li {
+    color: #494144;
     font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background .2s, transform .2s;
+    line-height: 1.8;
 }
-.referencia-item .abrir-fonte:hover {
-    background: var(--vinho-escuro);
-    transform: translateY(-2px);
+
+
+/* FORMAÇÃO E CURSOS */
+
+.curriculo-registro strong {
+    display: block;
+    margin-bottom: 5px;
+
+    color: var(--texto);
+    font-size: 14px;
 }
-@media (max-width: 800px) {
-    .galeria-estatica { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+
+/* LISTA DE HABILIDADES */
+
+.curriculo-lista {
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 35px;
 }
-@media (max-width: 600px) {
-    .anexos-pagina, .referencias-pagina {
-        width: min(100% - 34px, 950px);
-        margin-top: 35px;
-        padding-bottom: 35px;
+
+.curriculo-lista li {
+    padding-left: 3px;
+    margin-bottom: 5px;
+    break-inside: avoid;
+}
+
+
+/* AVISO */
+
+.curriculo-nota {
+    margin-top: 18px;
+    color: #71676a;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 760px) {
+
+    .curriculo-pagina {
+        width: min(100% - 30px, 900px);
+        margin: 40px auto 55px;
     }
-    .anexos-topo h1, .referencias-topo h1 { font-size: 38px; }
-    .anexos-topo p, .referencias-topo p { font-size: 14px; }
-    .galeria-estatica { grid-template-columns: 1fr; gap: 16px; }
-    .anexo-imagem img { height: 235px; }
-    .referencia-item { align-items: flex-start; flex-direction: column; gap: 13px; }
-    .referencia-item .abrir-fonte { align-self: flex-start; }
-}
-@media (prefers-reduced-motion: reduce) {
-    .anexo-card, .anexo-imagem img, .referencia-item, .referencia-item .abrir-fonte {
-        transition: none;
+
+    .curriculo-documento {
+        padding: 30px 25px;
     }
+
+    .curriculo-cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .curriculo-contatos {
+        min-width: 0;
+    }
+
+    .curriculo-identificacao h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .curriculo-documento {
+        padding: 24px 18px;
+    }
+
+    .curriculo-titulo p {
+        font-size: 14px;
+    }
+
+    .curriculo-lista {
+        columns: 1;
+    }
+
+    .curriculo-bloco h3 {
+        font-size: 18px;
+    }
+
+    .curriculo-imprimir {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+
+/* =====================================
+   IMPRESSÃO / SALVAR EM PDF
+===================================== */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 14mm 15mm;
+    }
+
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        background: #fff !important;
+        color: #222 !important;
+    }
+
+    header,
+    footer,
+    .curriculo-titulo,
+    .curriculo-acoes,
+    .curriculo-nota {
+        display: none !important;
+    }
+
+    .curriculo-pagina {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .curriculo-documento {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .curriculo-cabecalho {
+        break-inside: avoid;
+    }
+
+    .curriculo-bloco {
+        break-inside: avoid;
+    }
+
+    .curriculo-documento h2,
+    .curriculo-documento h3 {
+        color: #720019 !important;
+    }
+
+    .curriculo-documento p,
+    .curriculo-documento li {
+        color: #292426 !important;
+    }
+
 }
