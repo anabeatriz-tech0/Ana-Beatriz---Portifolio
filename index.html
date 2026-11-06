@@ -2,41 +2,35 @@
 <html lang="pt-BR">
 
 <head>
-    <script src="auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portfólio | Ana Beatriz</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Ícones -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="auth.js"></script>
 </head>
 
 <body>
 
     <!-- CABEÇALHO -->
     <header>
-
-        <div class="logo">
-            AB.
-        </div>
-
-        <nav aria-label="Navegação principal">
-            <a href="index.html" class="ativo">INÍCIO</a>
-            <a href="sobre.html">SOBRE MIM</a>
-            <a href="objetivos.html">OBJETIVOS</a>
-            <a href="projetos.html">PROJETOS</a>
-            <a href="areas.html">ÁREAS</a>
-            <a href="curriculo.html">CURRÍCULO</a>
-            <a href="anexos.html">ANEXOS</a>
-            <a href="referencias.html">REFERÊNCIAS</a>
-            <a href="contato.html">CONTATO</a>
-            <a href="#" onclick="sair(); return false;">SAIR</a>
+        <a href="index.html" class="logo" aria-label="Início">AB.</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="menu" aria-label="Navegação principal">
+            <a href="index.html" class="ativo" aria-current="page">Início</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="areas.html">Áreas</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="anexos.html">Anexos</a>
+            <a href="referencias.html">Referências</a>
+            <a href="contato.html">Contato</a>
+            <a href="#" class="sair" onclick="sair(); return false;">Sair</a>
         </nav>
-
     </header>
 
 
@@ -104,7 +98,7 @@
             <!-- FOTO -->
             <div class="foto-inicio">
 
-                <img src="img/Minha foto.png" alt="Foto de Ana Beatriz">
+                <img src="img/Minha foto.png" loading="eager" alt="Foto de Ana Beatriz">
 
                 <div class="detalhe-vinho"></div>
 
@@ -119,7 +113,7 @@
             <a href="sobre.html" class="card">
 
                 <div class="icone">
-                    ♙
+                    <i class="fa-solid fa-user"></i>
                 </div>
 
                 <div>
@@ -133,7 +127,7 @@
                     </p>
 
                     <span>
-                        SAIBA MAIS →
+                        Saiba mais
                     </span>
                 </div>
 
@@ -143,7 +137,7 @@
             <a href="objetivos.html" class="card">
 
                 <div class="icone">
-                    ◎
+                    <i class="fa-solid fa-bullseye"></i>
                 </div>
 
                 <div>
@@ -157,7 +151,7 @@
                     </p>
 
                     <span>
-                        SAIBA MAIS →
+                        Saiba mais
                     </span>
                 </div>
 
@@ -167,7 +161,7 @@
             <a href="projetos.html" class="card">
 
                 <div class="icone">
-                    ♡
+                    <i class="fa-solid fa-lightbulb"></i>
                 </div>
 
                 <div>
@@ -181,7 +175,7 @@
                     </p>
 
                     <span>
-                        SAIBA MAIS →
+                        Saiba mais
                     </span>
                 </div>
 
@@ -192,7 +186,7 @@
                 <div>
                     <h3>CURRÍCULO</h3>
                     <p>Confira minha formação e meus conhecimentos.</p>
-                    <span>ACESSAR →</span>
+                    <span>Acessar</span>
                 </div>
             </a>
 
@@ -201,7 +195,7 @@
                 <div>
                     <h3>ANEXOS</h3>
                     <p>Veja imagens e registros da minha trajetória.</p>
-                    <span>ACESSAR →</span>
+                    <span>Acessar</span>
                 </div>
             </a>
 
@@ -210,7 +204,7 @@
                 <div>
                     <h3>REFERÊNCIAS</h3>
                     <p>Consulte os sites usados nas minhas pesquisas.</p>
-                    <span>ACESSAR →</span>
+                    <span>Acessar</span>
                 </div>
             </a>
 
@@ -221,20 +215,16 @@
 
     <!-- RODAPÉ -->
     <footer>
-
-         <p class="tutores">
-            <strong>Tutores:</strong>
-            Cleiton Jericó • Regiane Leal
-        </p>
-
-        <p>
-            © 2026 Ana Beatriz. Todos os direitos reservados.
-        </p>
-
-      
-
+        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:ana.b.alves11@aluno.senai.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+5589994659668" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

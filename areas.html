@@ -2,20 +2,15 @@
 <html lang="pt-BR">
 
 <head>
-    <script src="auth.js"></script>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Áreas | Ana Beatriz</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Ícones -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="auth.js"></script>
 </head>
 
 
@@ -26,24 +21,20 @@
     ========================== -->
 
     <header>
-
-        <div class="logo">
-            AB.
-        </div>
-
-        <nav aria-label="Navegação principal">
-            <a href="index.html">INÍCIO</a>
-            <a href="sobre.html">SOBRE MIM</a>
-            <a href="objetivos.html">OBJETIVOS</a>
-            <a href="projetos.html">PROJETOS</a>
-            <a href="areas.html" class="ativo">ÁREAS</a>
-            <a href="curriculo.html">CURRÍCULO</a>
-            <a href="anexos.html">ANEXOS</a>
-            <a href="referencias.html">REFERÊNCIAS</a>
-            <a href="contato.html">CONTATO</a>
-            <a href="#" onclick="sair(); return false;">SAIR</a>
+        <a href="index.html" class="logo" aria-label="Início">AB.</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="menu" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="areas.html" class="ativo" aria-current="page">Áreas</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="anexos.html">Anexos</a>
+            <a href="referencias.html">Referências</a>
+            <a href="contato.html">Contato</a>
+            <a href="#" class="sair" onclick="sair(); return false;">Sair</a>
         </nav>
-
     </header>
 
 
@@ -86,7 +77,7 @@
             <section class="area">
 
                 <div class="area-cabecalho">
-                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank">
+                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank" rel="noopener noreferrer" aria-label="Ver trabalhos no Canva">
     <div class="area-icone">
         <i class="fa-solid fa-book-open"></i>
     </div>
@@ -121,7 +112,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Linguagens ATIVIDADE.png"
+                            <img loading="lazy" src="img/Linguagens ATIVIDADE.png"
                                 alt="Atividade de Linguagens - Eixo 1"
                                 onclick="abrirImagem(this)">
 
@@ -149,7 +140,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Linguagens ATIVIDADE (1).png"
+                            <img loading="lazy" src="img/Linguagens ATIVIDADE (1).png"
                                 alt="Atividade de Linguagens - Eixo 2"
                                 onclick="abrirImagem(this)">
 
@@ -177,7 +168,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/linguagens-eixo3.jpg"
+                            <img loading="lazy" src="imagens/linguagens-eixo3.jpg"
                                 alt="Atividade de Linguagens - Eixo 3"
                                 onclick="abrirImagem(this)">
 
@@ -205,7 +196,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/linguagens-eixo4.jpg"
+                            <img loading="lazy" src="imagens/linguagens-eixo4.jpg"
                                 alt="Atividade de Linguagens - Eixo 4"
                                 onclick="abrirImagem(this)">
 
@@ -235,7 +226,7 @@
 
                
                 <div class="area-cabecalho">
-                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank">
+                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank" rel="noopener noreferrer" aria-label="Ver trabalhos no Canva">
     <div class="area-icone">
         <i class="fa-solid fa-book-open"></i>
     </div>
@@ -267,7 +258,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Humanas ATIVIDADE.png"
+                            <img loading="lazy" src="img/Humanas ATIVIDADE.png"
                                 alt="Atividade de Ciências Humanas - Eixo 1"
                                 onclick="abrirImagem(this)">
 
@@ -293,7 +284,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Humanas ATIVIDADE (1).png"
+                            <img loading="lazy" src="img/Humanas ATIVIDADE (1).png"
                                 alt="Atividade de Ciências Humanas - Eixo 2"
                                 onclick="abrirImagem(this)">
 
@@ -319,7 +310,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/humanas-eixo3.jpg"
+                            <img loading="lazy" src="imagens/humanas-eixo3.jpg"
                                 alt="Atividade de Ciências Humanas - Eixo 3"
                                 onclick="abrirImagem(this)">
 
@@ -345,7 +336,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/humanas-eixo4.jpg"
+                            <img loading="lazy" src="imagens/humanas-eixo4.jpg"
                                 alt="Atividade de Ciências Humanas - Eixo 4"
                                 onclick="abrirImagem(this)">
 
@@ -374,7 +365,7 @@
             <section class="area">
 
                 <div class="area-cabecalho">
-                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank">
+                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank" rel="noopener noreferrer" aria-label="Ver trabalhos no Canva">
     <div class="area-icone">
         <i class="fa-solid fa-book-open"></i>
     </div>
@@ -406,7 +397,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Natureza ATIVIDADE.png"
+                            <img loading="lazy" src="img/Natureza ATIVIDADE.png"
                                 alt="Atividade de Ciências da Natureza - Eixo 1"
                                 onclick="abrirImagem(this)">
 
@@ -432,7 +423,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Natureza ATIVIDADE (1).png"
+                            <img loading="lazy" src="img/Natureza ATIVIDADE (1).png"
                                 alt="Atividade de Ciências da Natureza - Eixo 2"
                                 onclick="abrirImagem(this)">
 
@@ -458,7 +449,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/natureza-eixo3.jpg"
+                            <img loading="lazy" src="imagens/natureza-eixo3.jpg"
                                 alt="Atividade de Ciências da Natureza - Eixo 3"
                                 onclick="abrirImagem(this)">
 
@@ -484,7 +475,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/natureza-eixo4.jpg"
+                            <img loading="lazy" src="imagens/natureza-eixo4.jpg"
                                 alt="Atividade de Ciências da Natureza - Eixo 4"
                                 onclick="abrirImagem(this)">
 
@@ -514,7 +505,7 @@
 
             
                 <div class="area-cabecalho">
-                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank">
+                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank" rel="noopener noreferrer" aria-label="Ver trabalhos no Canva">
     <div class="area-icone">
         <i class="fa-solid fa-book-open"></i>
     </div>
@@ -546,7 +537,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Matemática ATIVIDADE (1).png"
+                            <img loading="lazy" src="img/Matemática ATIVIDADE (1).png"
                                 alt="Atividade de Matemática - Eixo 1"
                                 onclick="abrirImagem(this)">
 
@@ -572,7 +563,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Matemática ATIVIDADE (2).png"
+                            <img loading="lazy" src="img/Matemática ATIVIDADE (2).png"
                                 alt="Atividade de Matemática - Eixo 2"
                                 onclick="abrirImagem(this)">
 
@@ -598,7 +589,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/matematica-eixo3.jpg"
+                            <img loading="lazy" src="imagens/matematica-eixo3.jpg"
                                 alt="Atividade de Matemática - Eixo 3"
                                 onclick="abrirImagem(this)">
 
@@ -624,7 +615,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/matematica-eixo4.jpg"
+                            <img loading="lazy" src="imagens/matematica-eixo4.jpg"
                                 alt="Atividade de Matemática - Eixo 4"
                                 onclick="abrirImagem(this)">
 
@@ -654,7 +645,7 @@
 
             
                 <div class="area-cabecalho">
-                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank">
+                    <a href="https://canva.link/sstsk2y9lkq5mbw" target="_blank" rel="noopener noreferrer" aria-label="Ver trabalhos no Canva">
     <div class="area-icone">
         <i class="fa-solid fa-book-open"></i>
     </div>
@@ -686,7 +677,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Senai ATIVIDADE.png"
+                            <img loading="lazy" src="img/Senai ATIVIDADE.png"
                                 alt="Atividade do SENAI - Eixo 1"
                                 onclick="abrirImagem(this)">
 
@@ -712,7 +703,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="img/Senai ATIVIDADE (1).png"
+                            <img loading="lazy" src="img/Senai ATIVIDADE (1).png"
                                 alt="Atividade do SENAI - Eixo 2"
                                 onclick="abrirImagem(this)">
 
@@ -738,7 +729,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/senai-eixo3.jpg"
+                            <img loading="lazy" src="imagens/senai-eixo3.jpg"
                                 alt="Atividade do SENAI - Eixo 3"
                                 onclick="abrirImagem(this)">
 
@@ -764,7 +755,7 @@
 
                         <div class="imagem-atividade">
 
-                            <img src="imagens/senai-eixo4.jpg"
+                            <img loading="lazy" src="imagens/senai-eixo4.jpg"
                                 alt="Atividade do SENAI - Eixo 4"
                                 onclick="abrirImagem(this)">
 
@@ -795,23 +786,13 @@
     ========================== -->
 
     <footer>
-
-         <p class="tutores">
-
-            <strong>
-                Tutores:
-            </strong>
-
-            Cleiton Jericó • Regiane Leal
-
-        </p>
-
-        <p>
-            © 2026 Ana Beatriz. Todos os direitos reservados.
-        </p>
-
-
-
+        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:ana.b.alves11@aluno.senai.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+5589994659668" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
     </footer>
 
     <!-- =========================
@@ -828,8 +809,7 @@
 
 </div>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

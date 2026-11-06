@@ -1,88 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | Ana Beatriz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-
-  <div class="card">
-
-    <h2>Login</h2>
-
-    <form id="loginForm">
-
-      <label>Email</label>
-      <input 
-        type="email" 
-        name="email" 
-        required 
-        placeholder="seu@email.com"
-      >
-
-      <label>Senha</label>
-      <input 
-        type="password" 
-        name="senha" 
-        required 
-        placeholder="****"
-      >
-
-      <button type="submit">
-        Entrar
-      </button>
-
+  <main class="card">
+    <p class="marca">AB.</p>
+    <h1>Entrar</h1>
+    <p class="sub">Acesse o portfólio com seu e-mail e senha.</p>
+    <form id="loginForm" novalidate>
+      <label for="email">E-mail</label>
+      <input id="email" type="email" name="email" required autocomplete="username" placeholder="seu@email.com">
+      <label for="senha">Senha</label>
+      <input id="senha" type="password" name="senha" required autocomplete="current-password" placeholder="Digite sua senha">
+      <p id="erro" class="erro" role="alert" hidden></p>
+      <button type="submit">Entrar</button>
     </form>
-
-  </div>
-
-
+  </main>
+  <footer class="rodape-login">
+    <p><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+    <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
+  </footer>
   <script>
-
-    // ========================================
-    // USUÁRIOS PERMITIDOS
-    // ========================================
-    // Como o GitHub Pages não roda servidor/banco de dados,
-    // a verificação é feita aqui no navegador.
-    // Troque/adicione os usuários abaixo conforme quiser.
-
+    // O GitHub Pages não roda servidor/banco, então a verificação é feita aqui no navegador.
+    // Adicione ou troque usuários na lista abaixo.
     const USUARIOS = [
       { email: 'anab@email.com', senha: '1234' },
       { email: 'admin@email.com', senha: '1234' }
     ];
 
+    if (sessionStorage.getItem('logado') === 'sim') window.location.replace('index.html');
 
-    document.getElementById('loginForm').addEventListener('submit', function (event) {
-
-      event.preventDefault();
-
-      const email = document.querySelector('input[name="email"]').value.trim().toLowerCase();
-      const senha = document.querySelector('input[name="senha"]').value;
-
-      const usuarioValido = USUARIOS.some(
-        u => u.email === email && u.senha === senha
-      );
-
-      if (usuarioValido) {
-
-        // marca a sessão como logada (auth.js verifica isso nas outras páginas)
+    const erro = document.getElementById('erro');
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = this.email.value.trim().toLowerCase();
+      const senha = this.senha.value;
+      if (!email || !senha) { erro.textContent = 'Preencha e-mail e senha.'; erro.hidden = false; return; }
+      if (USUARIOS.some(u => u.email === email && u.senha === senha)) {
         sessionStorage.setItem('logado', 'sim');
-
         window.location.href = 'index.html';
-
       } else {
-
-        alert('Email ou senha incorretos!');
-
+        erro.textContent = 'E-mail ou senha incorretos.'; erro.hidden = false;
+        this.senha.value = ''; this.senha.focus();
       }
-
     });
-
   </script>
-
 </body>
-
 </html>

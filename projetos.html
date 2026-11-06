@@ -2,17 +2,15 @@
 <html lang="pt-BR">
 
 <head>
-    <script src="auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Projetos | Ana Beatriz</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Ícones -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="auth.js"></script>
 </head>
 
 <body>
@@ -20,24 +18,20 @@
     <!-- CABEÇALHO -->
 
     <header>
-
-        <div class="logo">
-            AB.
-        </div>
-
-        <nav aria-label="Navegação principal">
-            <a href="index.html">INÍCIO</article>
-            <a href="sobre.html">SOBRE MIM</article>
-            <a href="objetivos.html">OBJETIVOS</article>
-            <a href="projetos.html" class="ativo">PROJETOS</article>
-            <a href="areas.html">ÁREAS</article>
-            <a href="curriculo.html">CURRÍCULO</article>
-            <a href="anexos.html">ANEXOS</article>
-            <a href="referencias.html">REFERÊNCIAS</article>
-            <a href="contato.html">CONTATO</article>
-            <a href="#" onclick="sair(); return false;">SAIR</article>
+        <a href="index.html" class="logo" aria-label="Início">AB.</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="menu" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="projetos.html" class="ativo" aria-current="page">Projetos</a>
+            <a href="areas.html">Áreas</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="anexos.html">Anexos</a>
+            <a href="referencias.html">Referências</a>
+            <a href="contato.html">Contato</a>
+            <a href="#" class="sair" onclick="sair(); return false;">Sair</a>
         </nav>
-
     </header>
 
 
@@ -81,7 +75,7 @@
                     </span>
 
                     <h2>
-                        -Certificado de provas externas como OPMEP, OBA, OBR, PROVA BRASIL.
+                        Certificado de provas externas como OPMEP, OBA, OBR, PROVA BRASIL.
                     </h2>
 
                     <span class="seta">
@@ -98,7 +92,7 @@
                     </span>
 
                     <h2>
-                        -II Mostra Científica: Tecnologia.
+                        II Mostra Científica: Tecnologia.
                     </h2>
 
                     <span class="seta">
@@ -115,7 +109,7 @@
                     </span>
 
                     <h2>
-                        -III Mostra Científica: Sustentabilidade.
+                        III Mostra Científica: Sustentabilidade.
                     </h2>
 
                     <span class="seta">
@@ -132,7 +126,7 @@
                     </span>
 
                     <h2>
-                        -IV Mostra Científica: Escola Segura.
+                        IV Mostra Científica: Escola Segura.
                     </h2>
 
                     <span class="seta">
@@ -149,7 +143,7 @@
                     </span>
 
                     <h2>
-                        -II Saga Senai Projetos Integradores;
+                        II Saga Senai Projetos Integradores.
                     </h2>
 
                     <span class="seta">
@@ -165,7 +159,7 @@
                     </span>
 
                     <h2>
-                        -I Grand Prix Senai 2026.
+                        I Grand Prix Senai 2026.
                     </h2>
 
                     <span class="seta">
@@ -184,26 +178,16 @@
     <!-- RODAPÉ -->
 
     <footer>
-
-        <p class="tutores">
-
-            <strong>
-                Tutores:
-            </strong>
-
-            Cleiton Jericó • Regiane Leal
-
-        </p>
-
-        <p>
-            © 2026 Ana Beatriz. Todos os direitos reservados.
-        </p>
-
-
-
-
+        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:ana.b.alves11@aluno.senai.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+5589994659668" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

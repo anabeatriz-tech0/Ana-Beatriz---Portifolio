@@ -4,35 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anexos | Ana Beatriz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="auth.js"></script>
-    <style>
-        .anexos-pagina { max-width: 1100px; margin: 48px auto 65px; padding: 0 24px 30px; }
-        .anexos-topo { text-align: center; margin-bottom: 38px; }
-        .galeria-estatica { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; }
-        .anexo-card { margin: 0; min-width: 0; background: #fff; border: 1px solid var(--borda); border-radius: 13px; padding: 10px; overflow: hidden; box-shadow: var(--sombra-suave); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-        .anexo-card:hover { transform: translateY(-5px); border-color: #d7bdc2; box-shadow: var(--sombra-hover); }
-        .anexo-imagem { position: relative; overflow: hidden; border-radius: 8px; background: var(--cinza-claro); }
-        .anexo-card img { display:block; width:100%; height:245px; object-fit:cover; cursor: zoom-in; transition: transform .35s ease; }
-        .anexo-card:hover img { transform: scale(1.035); }
-        .anexo-imagem::after { content:"\f00e"; font-family:"Font Awesome 6 Free"; font-weight:900; position:absolute; right:12px; top:12px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; background:var(--vinho); color:#fff; font-size:13px; box-shadow:0 3px 10px rgba(40,0,10,.18); pointer-events:none; }
-        .anexo-card figcaption { display:flex; align-items:center; min-height:43px; color:var(--texto); padding:11px 7px 3px; font-size:14px; font-weight:500; line-height:1.45; }
-        .anexo-card figcaption::before { content:""; width:3px; height:23px; flex:0 0 3px; margin-right:11px; background:var(--vinho); border-radius:3px; }
-        .anexos-aviso { color:var(--texto-suave); text-align:center; font-size:13px; margin-top:25px; }
-        @media(max-width:800px) { .galeria-estatica { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-        @media(max-width:520px) { .anexos-pagina { margin-top:35px; padding:0 17px 35px; } .galeria-estatica { grid-template-columns:1fr; gap:16px; } .anexo-card img {height:235px;} }
-    </style>
 </head>
 <body>
     <header>
-        <div class="logo">AB.</div>
-        <nav aria-label="Navegação principal">
-            <a href="index.html">INÍCIO</a><a href="sobre.html">SOBRE MIM</a>
-            <a href="objetivos.html">OBJETIVOS</a><a href="projetos.html">PROJETOS</a>
-            <a href="areas.html">ÁREAS</a><a href="curriculo.html">CURRÍCULO</a>
-            <a href="anexos.html" class="ativo">ANEXOS</a><a href="referencias.html">REFERÊNCIAS</a>
-            <a href="contato.html">CONTATO</a><a href="#" onclick="sair(); return false;">SAIR</a>
+        <a href="index.html" class="logo" aria-label="Início">AB.</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="menu" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="areas.html">Áreas</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="anexos.html" class="ativo" aria-current="page">Anexos</a>
+            <a href="referencias.html">Referências</a>
+            <a href="contato.html">Contato</a>
+            <a href="#" class="sair" onclick="sair(); return false;">Sair</a>
         </nav>
     </header>
     <main class="anexos-pagina">
@@ -81,12 +74,17 @@
         <button class="fechar-modal" onclick="fecharImagem()" aria-label="Fechar imagem">&times;</button>
         <img id="imagemAmpliada" src="" alt="Imagem ampliada">
     </div>
-    <script src="script.js"></script>
 
     <footer>
         <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:ana.b.alves11@aluno.senai.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+5589994659668" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+        </div>
         <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

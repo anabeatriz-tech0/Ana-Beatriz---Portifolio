@@ -2,35 +2,35 @@
 <html lang="pt-BR">
 
 <head>
-    <script src="auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Sobre Mim | Ana Beatriz</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="auth.js"></script>
 </head>
 
 <body>
 
     <!-- CABEÇALHO -->
     <header>
-
-        <div class="logo">
-            AB.
-        </div>
-
-        <nav aria-label="Navegação principal">
-<a href="index.html">INÍCIO</a><a href="sobre.html" class="ativo">SOBRE MIM</a>
-<a href="objetivos.html">OBJETIVOS</a><a href="projetos.html">PROJETOS</a>
-<a href="areas.html">ÁREAS</a><a href="curriculo.html">CURRÍCULO</a>
-<a href="anexos.html">ANEXOS</a><a href="referencias.html">REFERÊNCIAS</a>
-<a href="contato.html">CONTATO</a><a href="#" onclick="sair(); return false;">SAIR</a>
-</nav>
-
+        <a href="index.html" class="logo" aria-label="Início">AB.</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="menu" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html" class="ativo" aria-current="page">Sobre mim</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="areas.html">Áreas</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="anexos.html">Anexos</a>
+            <a href="referencias.html">Referências</a>
+            <a href="contato.html">Contato</a>
+            <a href="#" class="sair" onclick="sair(); return false;">Sair</a>
+        </nav>
     </header>
 
 
@@ -398,26 +398,16 @@
     <!-- RODAPÉ -->
 
     <footer>
-
-        <p class="tutores">
-
-            <strong>
-                Tutores:
-            </strong>
-
-            Cleiton Jericó • Regiane Leal
-
-        </p>
-
-
-        <p>
-            © 2026 Ana Beatriz. Todos os direitos reservados.
-        </p>
-
-
-
+        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:ana.b.alves11@aluno.senai.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+5589994659668" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
