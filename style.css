@@ -2457,57 +2457,79 @@ footer {
 ===================================== */
 
 .referencias {
-    max-width: 1000px;
-    margin: auto;
-    padding: 70px 30px 90px;
-    min-height: 550px;
+    width: min(100% - 40px, 1050px);
+    margin: 65px auto 75px;
 }
 
-/* LISTA DE REFERÊNCIAS */
+/* TÍTULO */
+
+.referencias-titulo {
+    margin-bottom: 35px;
+}
+
+.referencias-titulo p {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* DOCUMENTO / LISTA */
 
 .lista-referencias {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
-    border-top: 1px solid var(--borda);
+    padding: 15px 25px;
+
+    background: var(--branco);
+
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 28px rgba(80, 0, 17, 0.06);
 }
 
-/* CARD */
+/* CARD DE REFERÊNCIA */
 
 .referencia-card {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 20px;
 
-    padding: 24px 25px;
+    padding: 22px 15px;
 
-    background-color: white;
     border-bottom: 1px solid var(--borda);
 
     transition: 0.3s;
 }
 
+.referencia-card:last-child {
+    border-bottom: none;
+}
+
 .referencia-card:hover {
-    background-color: var(--cinza-claro);
-    padding-left: 32px;
+    background: var(--cinza-claro);
+    border-radius: 8px;
+    transform: translateX(4px);
 }
 
 /* ÍCONE */
 
 .referencia-icone {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    background: var(--vinho);
+    color: var(--branco);
+
     border-radius: 50%;
-
-    background-color: var(--vinho);
-    color: white;
-
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* INFORMAÇÕES */
@@ -2518,31 +2540,33 @@ footer {
 }
 
 .referencia-info h2 {
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-weight: normal;
+    margin-bottom: 7px;
 
     color: var(--vinho);
-
-    margin-bottom: 7px;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
 }
 
 .referencia-info a {
-    color: #777;
+    color: #71676a;
     font-size: 13px;
+    text-decoration: none;
     overflow-wrap: anywhere;
+
     transition: 0.3s;
 }
 
 .referencia-info a:hover {
     color: var(--vinho);
+    text-decoration: underline;
 }
 
 /* SETA */
 
 .referencia-seta {
     color: var(--vinho);
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -2554,45 +2578,72 @@ footer {
 
 .referencias-vazia {
     padding: 35px 20px;
-    color: #777;
+
+    color: #71676a;
+    font-size: 13px;
     text-align: center;
-    font-size: 14px;
 }
 
-/* RESPONSIVIDADE */
 
-@media (max-width: 600px) {
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 760px) {
 
     .referencias {
-        padding: 50px 20px 60px;
+        width: min(100% - 30px, 900px);
+        margin: 40px auto 55px;
     }
 
-    .referencias .titulo-pagina h1 {
-        font-size: 38px;
+    .lista-referencias {
+        padding: 12px 18px;
     }
 
     .referencia-card {
-        gap: 14px;
-        padding: 20px 12px;
-    }
-
-    .referencia-card:hover {
-        padding-left: 16px;
-    }
-
-    .referencia-icone {
-        width: 45px;
-        height: 45px;
-        min-width: 45px;
-        font-size: 17px;
+        gap: 15px;
+        padding: 20px 10px;
     }
 
     .referencia-info h2 {
         font-size: 17px;
     }
 
+}
+
+
+@media (max-width: 520px) {
+
+    .referencias-titulo p {
+        font-size: 14px;
+    }
+
+    .lista-referencias {
+        padding: 8px 12px;
+    }
+
+    .referencia-card {
+        gap: 12px;
+        padding: 18px 8px;
+    }
+
+    .referencia-icone {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 16px;
+    }
+
+    .referencia-info h2 {
+        font-size: 16px;
+    }
+
     .referencia-info a {
         font-size: 11px;
     }
-}
 
+    .referencia-seta {
+        font-size: 14px;
+    }
+
+}
