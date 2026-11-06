@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="auth.js"></script>
     <style>
-        .anexos-pagina { max-width: 1100px; margin: 55px auto; padding: 0 24px 60px; }
-        .anexos-topo { text-align: center; margin-bottom: 35px; }
-        .anexos-topo span { color: var(--vinho); font-size: 12px; font-weight: bold; letter-spacing: 3px; }
-        .anexos-topo h1 { color: var(--vinho); font: 42px Georgia,serif; margin: 12px 0; }
-        .anexos-topo p { color: #71676a; line-height: 1.7; }
+        .anexos-pagina { max-width: 1100px; margin: 48px auto 65px; padding: 0 24px 30px; }
+        .anexos-topo { text-align: center; margin-bottom: 38px; }
         .galeria-estatica { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; }
-        .anexo-card { margin: 0; background: #fff; border: 1px solid var(--borda); border-radius: 12px; padding: 10px; overflow: hidden; }
-        .anexo-card img { display:block; width:100%; height:250px; object-fit:cover; border-radius:8px; cursor: zoom-in; transition: transform .25s; }
-        .anexo-card img:hover { transform: scale(1.025); }
-        .anexo-card figcaption { color: var(--texto); padding: 12px 5px 5px; font-size: 14px; }
-        .anexos-aviso { color:#71676a; text-align:center; font-size:13px; margin-top:25px; }
+        .anexo-card { margin: 0; min-width: 0; background: #fff; border: 1px solid var(--borda); border-radius: 13px; padding: 10px; overflow: hidden; box-shadow: var(--sombra-suave); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+        .anexo-card:hover { transform: translateY(-5px); border-color: #d7bdc2; box-shadow: var(--sombra-hover); }
+        .anexo-imagem { position: relative; overflow: hidden; border-radius: 8px; background: var(--cinza-claro); }
+        .anexo-card img { display:block; width:100%; height:245px; object-fit:cover; cursor: zoom-in; transition: transform .35s ease; }
+        .anexo-card:hover img { transform: scale(1.035); }
+        .anexo-imagem::after { content:"\f00e"; font-family:"Font Awesome 6 Free"; font-weight:900; position:absolute; right:12px; top:12px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; background:var(--vinho); color:#fff; font-size:13px; box-shadow:0 3px 10px rgba(40,0,10,.18); pointer-events:none; }
+        .anexo-card figcaption { display:flex; align-items:center; min-height:43px; color:var(--texto); padding:11px 7px 3px; font-size:14px; font-weight:500; line-height:1.45; }
+        .anexo-card figcaption::before { content:""; width:3px; height:23px; flex:0 0 3px; margin-right:11px; background:var(--vinho); border-radius:3px; }
+        .anexos-aviso { color:var(--texto-suave); text-align:center; font-size:13px; margin-top:25px; }
         @media(max-width:800px) { .galeria-estatica { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-        @media(max-width:520px) { .galeria-estatica { grid-template-columns:1fr; } .anexo-card img {height:230px;} .anexos-topo h1 {font-size:34px;} }
+        @media(max-width:520px) { .anexos-pagina { margin-top:35px; padding:0 17px 35px; } .galeria-estatica { grid-template-columns:1fr; gap:16px; } .anexo-card img {height:235px;} }
     </style>
 </head>
 <body>
@@ -35,41 +36,42 @@
         </nav>
     </header>
     <main class="anexos-pagina">
-        <div class="anexos-topo">
+        <div class="titulo-pagina anexos-topo">
             <span>REGISTROS VISUAIS</span>
             <h1>Meus Anexos</h1>
+            <div class="linha-titulo"></div>
             <p>Registros visuais de atividades, trabalhos e experiências da minha trajetória escolar.</p>
         </div>
         <section class="galeria-estatica" aria-label="Galeria de anexos">
            
 
              <figure class="anexo-card">
-                <img src="img/anexo 1.png" alt="Descrição da foto" onclick="abrirImagem(this)">
+                <div class="anexo-imagem"><img src="img/anexo 1.png" alt="Registro de atividade escolar" onclick="abrirImagem(this)"></div>
                 <figcaption>Trote "Não li o grupo"</figcaption>
             </figure>
 
                 <figure class="anexo-card">
-                <img src="img/anexo 2.png" alt="Descrição da foto" onclick="abrirImagem(this)">
+                <div class="anexo-imagem"><img src="img/anexo 2.png" alt="Registro de atividade escolar" onclick="abrirImagem(this)"></div>
                 <figcaption>Projeto Virtex SENAI</figcaption>
             </figure>
 
                <figure class="anexo-card">
-                <img src="img/anexo 3.png" alt="Descrição da foto" onclick="abrirImagem(this)">
+                <div class="anexo-imagem"><img src="img/anexo 3.png" alt="Registro de atividade escolar" onclick="abrirImagem(this)"></div>
                 <figcaption>1º Dia de aula</figcaption>
             </figure>
 
              <figure class="anexo-card">
-                <img src="img/anexo 4.png" alt="Descrição da foto" onclick="abrirImagem(this)">
+                <div class="anexo-imagem"><img src="img/anexo 4.png" alt="Registro de atividade escolar" onclick="abrirImagem(this)"></div>
                 <figcaption>Grand Prix SENAI</figcaption>
             </figure>
 
              <figure class="anexo-card">
-                <img src="img/anexo 5.png" alt="Descrição da foto" onclick="abrirImagem(this)">
+                <div class="anexo-imagem"><img src="img/anexo 5.png" alt="Registro de atividade escolar" onclick="abrirImagem(this)"></div>
                 <figcaption>V Mostra Científica: 6º ano</figcaption>
             </figure>
 
              <figure class="anexo-card">
-                <img src="img/anexo 6.png" alt="Descrição da foto" onclick="abrirImagem(this)">
+                <div class="anexo-imagem"><img src="img/anexo 6.png" alt="Registro de atividade escolar" onclick="abrirImagem(this)"></div>
                 <figcaption>V Mostra Científica: 1º série EM</figcaption>
             </figure>
 

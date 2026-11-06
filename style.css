@@ -2230,3 +2230,197 @@ footer p+p{margin-top:5px}
 .entrada-suave{opacity:0;transform:translateY(12px)}
 .entrada-suave.visivel{opacity:1;transform:translateY(0);transition:opacity .45s ease,transform .45s ease}
 @media(prefers-reduced-motion:reduce){.entrada-suave{opacity:1;transform:none}}
+
+
+
+/* =========================================
+   PADRONIZAÇÃO — ANEXOS E REFERÊNCIAS
+   Mesmo título usado na página Meu Currículo
+========================================= */
+.anexos-topo,
+.referencias-topo {
+    text-align: center;
+    margin-bottom: 38px;
+}
+.anexos-topo span,
+.referencias-topo span {
+    color: var(--vinho);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.anexos-topo h1,
+.referencias-topo h1 {
+    margin-top: 12px;
+    color: var(--vinho);
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.15;
+}
+.anexos-topo .linha-titulo,
+.referencias-topo .linha-titulo {
+    width: 45px;
+    height: 3px;
+    margin: 18px auto 0;
+    background: var(--vinho);
+}
+.anexos-topo p,
+.referencias-topo p {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.7;
+}
+.anexos-pagina {
+    width: min(100% - 36px, 1100px);
+    margin: 48px auto 65px;
+    padding: 0 0 30px;
+}
+.galeria-estatica {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+.anexo-card {
+    min-width: 0;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid var(--borda);
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: var(--sombra-suave);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.anexo-card:hover {
+    transform: translateY(-5px);
+    border-color: #d7bdc2;
+    box-shadow: var(--sombra-hover);
+}
+.anexo-imagem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--cinza-claro);
+}
+.anexo-imagem img {
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: transform .35s ease;
+}
+.anexo-card:hover .anexo-imagem img { transform: scale(1.035); }
+.anexo-imagem::after {
+    content: "\f00e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--vinho);
+    color: #fff;
+    font-size: 13px;
+    box-shadow: 0 3px 10px rgba(40,0,10,.18);
+    pointer-events: none;
+}
+.anexo-card figcaption {
+    display: flex;
+    align-items: center;
+    min-height: 43px;
+    padding: 11px 7px 3px;
+    color: var(--texto);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+}
+.anexo-card figcaption::before {
+    content: "";
+    width: 3px;
+    height: 23px;
+    flex: 0 0 3px;
+    margin-right: 11px;
+    border-radius: 3px;
+    background: var(--vinho);
+}
+.referencias-pagina {
+    width: min(100% - 36px, 950px);
+    margin: 48px auto 65px;
+    padding: 0 0 30px;
+}
+.referencias-lista { display: grid; gap: 15px; }
+.referencia-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    min-width: 0;
+    padding: 21px 23px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: var(--sombra-suave);
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.referencia-item:hover {
+    transform: translateY(-3px);
+    border-color: #d7bdc2;
+    box-shadow: var(--sombra-hover);
+}
+.referencia-item h2 {
+    margin: 0 0 5px;
+    color: var(--vinho);
+    font: normal 20px Georgia, serif;
+}
+.referencia-item .url-fonte {
+    color: #6f2638;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+.referencia-item .abrir-fonte {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border-radius: 7px;
+    background: var(--vinho);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .2s, transform .2s;
+}
+.referencia-item .abrir-fonte:hover {
+    background: var(--vinho-escuro);
+    transform: translateY(-2px);
+}
+@media (max-width: 800px) {
+    .galeria-estatica { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+    .anexos-pagina, .referencias-pagina {
+        width: min(100% - 34px, 950px);
+        margin-top: 35px;
+        padding-bottom: 35px;
+    }
+    .anexos-topo h1, .referencias-topo h1 { font-size: 38px; }
+    .anexos-topo p, .referencias-topo p { font-size: 14px; }
+    .galeria-estatica { grid-template-columns: 1fr; gap: 16px; }
+    .anexo-imagem img { height: 235px; }
+    .referencia-item { align-items: flex-start; flex-direction: column; gap: 13px; }
+    .referencia-item .abrir-fonte { align-self: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .anexo-card, .anexo-imagem img, .referencia-item, .referencia-item .abrir-fonte {
+        transition: none;
+    }
+}
