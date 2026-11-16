@@ -1,1 +1,0 @@
-Coloque nesta pasta as imagens que deseja mostrar em anexos.html. Depois, adicione cada imagem no HTML conforme o exemplo comentado.
