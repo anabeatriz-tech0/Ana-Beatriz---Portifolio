@@ -74,7 +74,7 @@ function carregarGratidao() {
     img.src = foto.src;
     img.alt = foto.legenda || "Foto de recordação";
     img.addEventListener("click", () => abrirImagem(img));
-    img.addEventListener("error", () => { img.style.display = "none"; img.parentElement.classList.add("sem-imagem"); });
+    img.addEventListener("error", () => { img.style.display = "none"; img.parentElement.classList.add("img/fotos colab.png"); });
     fig.querySelector("figcaption").textContent = foto.legenda || "";
     lista.appendChild(fig);
   });
