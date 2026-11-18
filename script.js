@@ -53,9 +53,7 @@ function fecharImagem() {
 // ===== Página de agradecimentos: fotos =====
 // Para adicionar uma foto: coloque o arquivo na pasta img e inclua { src, legenda } aqui.
 const fotosGratidao = [
-  // { src: "img/gratidao 1.jpg", legenda: "Meus amigos" },
-  // { src: "img/gratidao 2.jpg", legenda: "Meus professores" },
-  // { src: "img/gratidao 3.jpg", legenda: "Projeto Virtex SENAI" }
+    { src: "img/fotos colab.png", legenda: "Projeto Virtex SENAI" }
 ];
 
 function carregarGratidao() {
