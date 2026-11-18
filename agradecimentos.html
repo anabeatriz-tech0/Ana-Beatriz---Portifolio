@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimentos | Ana Beatriz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="auth.js"></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="index.html" class="logo" aria-label="Início">AB.</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="menu" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="objetivos.html">Objetivos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="areas.html">Áreas</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="anexos.html">Anexos</a>
+            <a href="referencias.html">Referências</a>
+            <a href="contato.html">Contato</a>
+            <a href="agradecimentos.html" class="ativo" aria-current="page">Agradecimentos</a>
+            <a href="#" class="sair" onclick="sair(); return false;">Sair</a>
+        </nav>
+    </header>
+
+
+    <main class="agradecimento-pagina">
+
+        <!-- TÍTULO -->
+        <div class="titulo-pagina">
+            <span>FINALIZAÇÃO</span>
+            <h1>Agradecimentos</h1>
+            <div class="linha-titulo"></div>
+            <p>Toda trajetória é feita de pessoas, e esta etapa não seria a mesma sem elas.</p>
+        </div>
+
+
+        <!-- CARTA DE AGRADECIMENTO -->
+        <article class="carta">
+
+            <i class="fa-solid fa-heart carta-icone" aria-hidden="true"></i>
+
+            <h2>Com o coração cheio de gratidão</h2>
+
+            <p>
+                Chegar até aqui foi um caminho de muito estudo, dedicação e também
+                de muitos momentos felizes. Ao fechar esta etapa, olho para trás e
+                percebo que não caminhei sozinha, e é por isso que este espaço é
+                dedicado a quem fez parte dela.
+            </p>
+
+            <p>
+                Agradeço primeiramente a <strong>Deus</strong>, pela força e pela saúde
+                em cada dia, e à minha <strong>família</strong>, que sempre acreditou
+                em mim, me incentivou e esteve ao meu lado nos momentos de cansaço
+                e de conquista.
+            </p>
+
+            <p>
+                Agradeço aos meus <strong>professores</strong> e <strong>tutores</strong>,
+                em especial a Cleiton Jericó e Regiane Leal, por cada ensinamento,
+                cada conselho e cada palavra de incentivo. Vocês me mostraram que
+                aprender vai muito além da sala de aula.
+            </p>
+
+            <p>
+                Agradeço aos meus <strong>amigos</strong>, pelas risadas, pela parceria
+                nas atividades e pelos momentos que tornaram os dias mais leves.
+                Levo cada um de vocês comigo.
+            </p>
+
+            <p>
+                Agradeço também aos <strong>projetos</strong>, às mostras e às
+                oportunidades que o SESI e o SENAI me proporcionaram, pois cada
+                desafio me fez crescer e me ensinou a acreditar mais em mim.
+            </p>
+
+            <p>
+                Esta não é uma despedida, é o começo de uma nova fase. Sigo com
+                gratidão no coração e com vontade de conquistar tudo o que ainda
+                vem pela frente.
+            </p>
+
+            <p class="carta-assinatura">Com carinho,<br><span>Ana Beatriz</span></p>
+
+        </article>
+
+
+        <!-- GALERIA DE MOMENTOS -->
+        <section class="gratidao-galeria" aria-label="Galeria de momentos">
+
+            <div class="rotina-titulo">
+                <span>RECORDAÇÕES</span>
+                <h2>Momentos que ficam</h2>
+                <div class="linha-titulo"></div>
+                <p>Alguns registros das pessoas e dos momentos que marcaram a minha trajetória.</p>
+            </div>
+
+            <div class="polaroids" id="listaGratidao">
+                <!-- As fotos são carregadas pelo JavaScript (lista "fotosGratidao" no script.js) -->
+            </div>
+
+        </section>
+
+
+        <!-- FRASE FINAL -->
+        <div class="frase-objetivos">
+            <span>“</span>
+            <p>Gratidão é lembrar com carinho de quem caminhou comigo.</p>
+            <span>”</span>
+        </div>
+
+        <div class="gratidao-voltar">
+            <a href="index.html" class="btn-principal"><i class="fa-solid fa-house"></i> VOLTAR AO INÍCIO</a>
+        </div>
+
+    </main>
+
+    <div id="modalImagem" class="modal-imagem" role="dialog" aria-label="Imagem ampliada" aria-modal="true">
+        <button class="fechar-modal" onclick="fecharImagem()" aria-label="Fechar imagem">&times;</button>
+        <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p class="tutores"><strong>Tutores:</strong> Cleiton Jericó • Regiane Leal</p>
+        <div class="redes-footer">
+            <a href="https://www.instagram.com/a.naalves_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:ana.b.alves11@aluno.senai.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+5589994659668" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p>© 2026 Ana Beatriz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

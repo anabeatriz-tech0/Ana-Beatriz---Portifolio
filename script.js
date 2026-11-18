@@ -50,8 +50,39 @@ function fecharImagem() {
   document.body.style.overflow = "";
 }
 
+// ===== Página de agradecimentos: fotos =====
+// Para adicionar uma foto: coloque o arquivo na pasta img e inclua { src, legenda } aqui.
+const fotosGratidao = [
+  // { src: "img/gratidao 1.jpg", legenda: "Meus amigos" },
+  // { src: "img/gratidao 2.jpg", legenda: "Meus professores" },
+  // { src: "img/gratidao 3.jpg", legenda: "Projeto Virtex SENAI" }
+];
+
+function carregarGratidao() {
+  const lista = document.getElementById("listaGratidao");
+  if (!lista) return;
+  lista.innerHTML = "";
+  if (!fotosGratidao.length) {
+    lista.innerHTML = '<p class="gratidao-vazia"><i class="fa-regular fa-images"></i>As fotos serão adicionadas em breve.</p>';
+    return;
+  }
+  fotosGratidao.forEach((foto, i) => {
+    const fig = document.createElement("figure");
+    fig.className = "polaroid";
+    fig.innerHTML = '<div class="polaroid-foto"><img loading="lazy"></div><figcaption></figcaption>';
+    const img = fig.querySelector("img");
+    img.src = foto.src;
+    img.alt = foto.legenda || "Foto de recordação";
+    img.addEventListener("click", () => abrirImagem(img));
+    img.addEventListener("error", () => { img.style.display = "none"; img.parentElement.classList.add("sem-imagem"); });
+    fig.querySelector("figcaption").textContent = foto.legenda || "";
+    lista.appendChild(fig);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   carregarReferencias();
+  carregarGratidao();
 
   // menu mobile
   const botao = document.querySelector(".menu-toggle");
