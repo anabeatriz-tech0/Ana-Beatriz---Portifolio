@@ -63,7 +63,7 @@ function carregarGratidao() {
   if (!lista) return;
   lista.innerHTML = "";
   if (!fotosGratidao.length) {
-    lista.innerHTML = '<p class="gratidao-vazia"><i class="fa-regular fa-images"></i>As fotos serão adicionadas em breve.</p>';
+    lista.innerHTML = '<p class="gratidao-vazia"><i class="fa-regular fa-images"></i>img/fotos colab.png</p>';
     return;
   }
   fotosGratidao.forEach((foto, i) => {
